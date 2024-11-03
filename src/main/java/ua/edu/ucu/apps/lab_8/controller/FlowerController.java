@@ -21,12 +21,12 @@ public class FlowerController {
         this.flowerService = flowerService;
     }
 
-    @GetMapping("/flowers")
+    @GetMapping("/flower")
     public List<Flower> getFlowers() {
         return flowerService.getFlowers();
     }
 
-    @PostMapping("/flowers")
+    @PostMapping("/flower")
     public Flower createFlower(@RequestBody Flower flower) {
         return new Flower();
     }
